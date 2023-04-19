@@ -11,6 +11,6 @@
 
 ![whitbord](./Lab-6-roll-dice.jpg)
 
-[code](./game_logic.py)
+[code](./ten_thousand/game.py)
 
-[test](./test/test_calculate_score%20(1).py)
+[test](./tests/version_2/test_sim_basic.py)
