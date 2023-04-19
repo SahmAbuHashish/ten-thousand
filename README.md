@@ -1,6 +1,6 @@
 # ten-thousand
 
-## LAB - Class 06
+## LAB - Class 06 / Roll dice
 
 ## Project: ten-thousand
 
