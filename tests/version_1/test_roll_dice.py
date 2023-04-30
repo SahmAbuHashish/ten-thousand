@@ -6,7 +6,7 @@
 - The length of tuple must match the argument given to `roll_dice` method.
 
 """
-import pytest
+import pytest 
 from ten_thousand.game_logic import GameLogic
 
 def test_1_dice():
