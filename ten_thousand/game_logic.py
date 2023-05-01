@@ -30,8 +30,8 @@ class GameLogic():
         count_result = Counter(roll_dice)
         #define a most common that = to common value for the rolling dice to  return sorted array as a list of tuples  
         most_common = count_result.most_common() 
-        print(most_common)
-        #if the length of array for most conmen values = 6  then a 2000 will be add to sum
+        # print(most_common)
+        #if the length of array for most conmon values = 6  then a 2000 will be add to sum
         if len(most_common) == 6:
             sum += 2000
             return sum
@@ -69,9 +69,14 @@ class GameLogic():
     def run_dice(number):
         GameLogic.roll_dice(number)
         GameLogic.calculate_score()
+    
+
+    def validate_keepers(roll, keepers):
+        roll = roll.counter(roll)
+        keepers = keepers.counter(keepers)
+        result = roll - keepers
 
 # after_input_ofdice = GameLogic.roll_dice(4)
 # after_calculating_score = GameLogic.calculate_score((1,2,5,5,5,6))
-
 # print(after_input_ofdice)
 # print(after_calculating_score)   

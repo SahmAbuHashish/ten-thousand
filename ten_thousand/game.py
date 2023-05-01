@@ -1,3 +1,4 @@
+from collections import Counter
 from game_logic import GameLogic
 
 calculator = GameLogic.calculate_score
@@ -21,6 +22,8 @@ def play(roller=GameLogic.roll_dice):
 def quitter():
       print("OK. Maybe another time")
 
+
+
 def start_round(round = 1, new_total_score = total_score, dice_count = 6):
 #2 start round function
 #variable <= 20
@@ -41,7 +44,7 @@ def start_round(round = 1, new_total_score = total_score, dice_count = 6):
                 quit(new_total_score)
 
             elif not isinstance(int(user_input), (int)):
-                print("Cheating ?")   
+                print("Cheater!!! Or possibly made a typo...")   
 
             else:
                 kept_dices = tuple(int (x) for x in user_input)
@@ -61,7 +64,7 @@ def start_round(round = 1, new_total_score = total_score, dice_count = 6):
                       new_total_score += score
                       banking(score, round, new_total_score)
                 else:
-                    print("You are cheating")      
+                    print("Cheater!!! Or possibly made a typo...")      
 
 def banking(score, round, new_total_score):
 #5 function banking store print total score store and starts round function
