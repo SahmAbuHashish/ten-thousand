@@ -30,7 +30,7 @@ class GameLogic():
         count_result = Counter(roll_dice)
         #define a most common that = to common value for the rolling dice to  return sorted array as a list of tuples  
         most_common = count_result.most_common() 
-        print(most_common)
+        # print(most_common)
         #if the length of array for most conmen values = 6  then a 2000 will be add to sum
         if len(most_common) == 6:
             sum += 2000
